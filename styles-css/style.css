@@ -8,22 +8,25 @@ body{
 }
 .copa-america{
     display: flex;
-    width: 1440px;
-    height: 677px; 
+    justify-content: space-between;
+    /*  width: 1400px; */
+    height: 600px;  
     color: #FFFFFF;
     background-color: #2D25A0;
     align-items: center;
     margin-bottom: 70px;
-   
+       
     }
     .copa-america:hover .image{
         transform: scale(1.3);
         transition: transform 2s ease-in;
     }
     .copa-text{
-        width: 485px;
-        height: 230px;
-        font-size: 40px;
+        /* width: 480px;
+        height: 230px; */
+        width: 400PX;
+        height: 260PX;
+        font-size: 36px;
         padding-bottom: 100px;
         }
 .image img{
@@ -63,6 +66,7 @@ body{
         grid-gap: 10px;
         grid-row-gap: 27px;
         padding: 10px;
+        margin-bottom: 50px;
        
         
     }
@@ -96,15 +100,43 @@ body{
         height: 256px;
         padding-left: 15px;
     }
+    .main-partner{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    
+    }
+    .partners{
+        box-shadow: 10px 10px 20px lightgray;
+        padding: 20px;
+    }
+    .partners h2{
+        text-align: center;
+        color: crimson;
+        font-size: 40px;
+            }
+    .nike img {
+        width: 100px;
+        height: 50px;
+    }  
+    .addidas img{
+        width: 100px;
+        height: 50px;
+    }
+    .puma img {
+        width: 100px;
+        height: 50px;
+    } 
     /* -----------------------------
             footer-style
        ----------------------------*/
 
 .footer{
-    width: 484px;
-    height: 213px;
-    
-    margin: 158px;
+    /* width: 484px;
+    height: 213px; */
+    /* align-items: center; */
+    /* box-shadow: 10px 10px 20px lightgray; */
+    margin: 100px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 63px;
@@ -131,13 +163,12 @@ body{
             }
             /* Media Query for Devices */
             /* MObile Devices */
-            @media only screen and (max-width:688px) {
+ @media only screen and (max-width:688px) {
                .copa-america{
                    width: 100%;
                    flex-direction: column;
                    /* margin-left: none; */
-                   align-items: center;
-                   
+                   align-items: center;                   
                }
-                               
+                           
             }
